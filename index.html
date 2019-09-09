@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400i|Sarabun:400,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <title>Online Store</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Shop <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+
+      <a class="navbar-brand" href="#">
+        <p>EZSRA</p>
+      </a>
+
+      <form class="form-inline">
+
+        <div class="dropdown menu-btn">
+          <!-- DROPDOWN MENU -->
+          <div class="button btn mr-2"><i class="fa fa-user-circle mr-2"></i>Settings</div>
+          <ul class="atribute">
+            <li><a class="active" href="#Create Page">Security & Privacy</a></li>
+            <li><a href="#">Prefrences</a></li>
+            <li><a href="#">Manage Profile</a></li>
+            <li><a href="#">Activity Logs</a></li>
+            <li><a href="#">Accounts</a></li>
+          </ul>
+        </div>
+
+        <a href="cart.html" class="btn btn-outline-success"> <i class="fa fa-shopping-cart"></i> R<span
+            id="total-cart"></span></a>
+
+        <button type="submit" class="btn btn-outline-dark">Sign out</button>
+      </form>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid catalogue pt-3">
+    <div class="row">
+
+      <div class="col-lg-9 catalogue-items center-block">
+
+        <div class="row">
+
+          <div class="card col-xl-2 col-lg-3 col-md-3 col-sm-5">
+            <img src="./images/Furniture18.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body product-description" data-name="Apple" data-price="5">
+              <h5 class="card-title product-name">Apple</h5>
+              <h6 class="card-subtitle mb-2 text-muted product-price">&dollar; 5</h6>
+              <p class="card-text">Round Wine side table</p>
+              <a class="add-to-cart card-link" href="#" data-name="Apple" data-price="5">Add to Cart</a>
+            </div>
+          </div>
+
+
+          <div class="card col-xl-2 col-lg-3 col-md-3 col-sm-5">
+            <img src="./images/Furniture14.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Banana</h5>
+              <h6 class="card-subtitle mb-2 text-muted">13.33</h6>
+              <p class="card-text">Mini chair and table</p>
+              <br>
+              <a href="#" class="card-link add-to-cart" data-name="Banana" data-price="13.33">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="card col-xl-2 col-lg-3 col-md-3 col-sm-5">
+            <img src="./images/Furniture10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Frisbee</h5>
+              <h6 class="card-subtitle mb-2 text-muted">50.12</h6>
+              <p class="card-text">Matching Comfy Boujee Chairs</p>
+              <br>
+              <a href="#" class="card-link add-to-cart" data-name="Frisbee" data-price="50.12">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="card col-xl-2 col-lg-3 col-md-3 col-sm-5">
+            <img src="./images/Furniture6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shoe</h5>
+              <h6 class="card-subtitle mb-2 text-muted">22.33</h6>
+              <p class="card-text">Hexagonal Coffee Table - rain Bluesos wood</p>
+              <br>
+              <a href="#" class="card-link add-to-cart" data-name="Shoe" data-price="22.33">Add to Cart</a>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container footer">
+    <div class="row">
+
+      <div class="mx-auto badge text-wrap">
+        <div>You have <span class="badge badge-dark px-2 rounded-pill" id="count-cart">X</span> items in your cart</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="js/shoppingCart.js"></script>
+
+  <script>
+    $(".add-to-cart").click(function (event) {
+      event.preventDefault();
+      var name = $(this).attr("data-name");
+      var price = Number($(this).attr("data-price"));
+
+      shoppingCart.addItemToCart(name, price, 1);
+      displayCart();
+      alert("Your current total is" + " " + "R:" + shoppingCart.totalCart());
+    });
+
+    $("#clear-cart").click(function (event) {
+      shoppingCart.clearCart();
+      displayCart();
+    });
+
+    function displayCart() {
+      var cartArray = shoppingCart.listCart();
+      console.log(cartArray);
+      var output = "";
+
+      for (var i in cartArray) {
+        output += "<li>" +
+          cartArray[i].name +
+          " <input class='item-count' type='number' data-name='" +
+          cartArray[i].name +
+          "' value='" + cartArray[i].count + "' >" +
+          " x " + cartArray[i].price +
+          " = " + cartArray[i].total +
+          " <button class='plus-item' data-name='" +
+          cartArray[i].name + "'>+</button>" +
+          " <button class='subtract-item' data-name='" +
+          cartArray[i].name + "'>-</button>" +
+          " <button class='delete-item' data-name='" +
+          cartArray[i].name + "'>X</button>" +
+          "</li>";
+      }
+
+      $("#show-cart").html(output);
+      $("#count-cart").html(shoppingCart.countCart());
+      $("#total-cart").html(shoppingCart.totalCart());
+      $("#total-vat").html(shoppingCart.totalVat());
+      $("#dropdown").html(shoppingCart.dropdown());
+
+    }
+
+    $("#show-cart").on("click", ".delete-item", function (event) {
+      var name = $(this).attr("data-name");
+      shoppingCart.removeItemFromCartAll(name);
+      displayCart();
+    });
+
+    $("#show-cart").on("click", ".subtract-item", function (event) {
+      var name = $(this).attr("data-name");
+      shoppingCart.removeItemFromCart(name);
+      displayCart();
+    });
+
+    $("#show-cart").on("click", ".plus-item", function (event) {
+      var name = $(this).attr("data-name");
+      shoppingCart.addItemToCart(name, 0, 1);
+      displayCart();
+    });
+
+    $("#show-cart").on("change", ".item-count", function (event) {
+      var name = $(this).attr("data-name");
+      var count = Number($(this).val());
+      shoppingCart.setCountForItem(name, count);
+      displayCart();
+    });
+
+
+    displayCart();
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

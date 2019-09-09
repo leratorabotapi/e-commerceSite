@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400i|Sarabun:400,600&display=swap');
+
+body {
+    font-family: 'Sarabun', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    padding: 5px;
+    border: 0.5px solid #f5f7fa;
+}
+
+/* List */
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 5px;
+}
+
+.table {
+    border: 0.5px solid #f5f7fa;
+    background-color: white;
+}
+
+.table-light {
+    color: lightpink;
+}
+
+/* Nav */
+.navbar-brand {
+    margin: auto;
+    color: #f64747;
+}
+
+.header h2 {
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 600;
+    font-size: 68px;
+    text-orientation: sideways;
+    writing-mode: vertical-lr;
+    float: right;
+    transform: rotate(-180deg);
+    padding: 0 0 10% 0;
+}
+
+/* Block */
+.fit-image {
+    background-image: url('../images/Furniture5.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 600px;
+}
+
+.fit-image2 {
+    background-image: url('../images/Furniture9.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 600px;
+}
+
+.header span {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+/* Brand */
+.brand {
+    padding: 50px 0 50px;
+}
+
+.brand h6 {
+    font-size: 20px;
+    font-style: initial;
+}
+
+.brand p {
+    line-height: ;
+    color: grey;
+    font-size: 16px;
+}
+
+/* Icons */
+.fa {
+    color: gray;
+}
+
+/* Filter Image */
+.filter-img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+/* Header */
+
+.header {
+    height: 600px;
+    background-color: #f5f7fa;
+}
+
+.header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+}
+
+.btn,
+.form-control {
+    border-radius: 0;
+}
+
+.btn {
+    padding: 5px 12px;
+    border: 0.1px solid black;
+    margin: 0 3px;
+}
+
+.header .btn {
+    position: absolute;
+    bottom: 30%;
+}
+
+.badge {
+    font-size: 16px;
+}
+
+.welcome {
+    margin: 0 20%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Display Items in Cart */
+.item-display {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+}
+
+.item-display li {
+    margin: 30px 0px;
+}
+
+.item-display .fa {
+    color: red;
+    float: right;
+    padding-right: 12em;
+}
+
+.item-display .item-count {
+    max-width: 50px;
+    border: 0.1px solid antiquewhite;
+    margin: 0 6em;
+    float: ;
+}
+
+.item-display button {
+    border: 0px solid;
+    border-radius: 25%;
+    padding: 10px;
+}
+
+
+
+/* catalogue */
+
+/* Welcome */
+.sale {
+    padding: 80px 0;
+    background-color: #f5f7fa;
+}
+
+.sale h3 {
+    font-weight: 600;
+    font-size: 46px;
+    padding-top: 30px;
+}
+
+.sale p {
+    padding-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.collect {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+/* logo */
+
+.logos {
+    padding: 30px;
+}
+
+.logos img {
+    width: 150px;
+    padding: 10px;
+}
+
+.testimonial-stars {
+    animation: myanimation 10s infinite;
+}
+
+@keyframes myanimation {
+    50% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: #f5f7fa
+    }
+
+}
+
+.ad {
+    max-width: 430px;
+    border-radius: 1px;
+}
+
+.ad h4 {
+    font-style: oblique;
+    color: whitesmoke;
+}
+
+.ad p {
+    font-style: italic;
+}
+
+.sale-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Floating Boxes */
+
+.floating-box {
+    float: left;
+    width: 150px;
+    max-height: 150px;
+    margin: 10px;
+    border: 5px solid #f5f7fa;
+}
+
+/* form-group */
+
+.form-group {
+    margin: 0 3px;
+}
+
+/* Cards */
+
+.card {
+    background-color: white;
+    border-radius: 1px;
+    border: 0px;
+    margin: 10px 0 10px;
+    max-height: 300px;
+    overflow: auto;
+    padding: 0px;
+    font-weight: 600;
+}
+
+.altcard {
+    background-color: #f5f7fa;
+}
+
+.card-img-top {
+    display: block;
+
+    height: auto;
+    max-height: 50%;
+
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+/* About */
+
+.about {
+    margin: 50px 0;
+    padding-top: 30px;
+}
+
+.about-img {
+    padding: 20px;
+    background-color: #f5f7fa;
+
+    display: block;
+
+    height: 350px;
+    max-height: auto;
+
+    width: auto;
+    max-width: 100%;
+
+    object-fit: cover;
+}
+
+.about .card-img-top {
+    height: 60%;
+}
+
+/* catalogue */
+
+.catalogue {
+    background-color: #f5f7fa;
+}
+
+.catalogue .card {
+    background-color: white;
+    margin: 10px 10px 10px;
+    max-height: 400px;
+    max-width: 400px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+/* Dropdown */
+.menu-btn {
+    position: relative;
+    display: inline-block;
+}
+.menu-btn ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top:45px;
+    right:0px;
+    width: 200px;
+    background-color: white;
+    font-weight:bold;
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu-btn li a {
+    color: #000;
+    text-decoration: none;
+}
+.menu-btn li {
+    padding: 6px 14px;
+    border-bottom: 1px;
+}
+.menu-btn li:last-child {
+    border-bottom: none;
+}
+.menu-btn li:hover {
+    background-color: #e5e5e5;
+    color: white;
+}
+
+/* Footer */
+
+.section-spacing {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.section-spacing:first-child {
+    padding-top: 10rem;
+}
+
+.section-title {
+    color: #403e3b;
+    margin-bottom: 5rem;
+}
+
+.section-cta-btn {
+    margin-top: 3.5rem;
+}
+
+.gray-background {
+    background: #f5f7fa;
+}
+
+.gray-arrow {
+    position: relative;
+}
+
+.gray-arrow .triangle-background {
+    fill: #f5f0eb;
+    position: absolute;
+    top: 0px;
+}
+
+.testimonial-stars .testimonial-holder {
+    background: white;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    margin: 0 5%;
+}
+
+.testimonial-stars .testimonial-meta h4 {
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-stars .testimonial-meta p {
+    opacity: 0.75;
+}
+
+.testimonial-stars .t-stars-box {
+    color: #f64747;
+    padding-top: 1rem;
+}
+
+.testimonial-stars .testimonial-graphic {
+    opacity: 0.75;
+}
+
+.testimonial-stars .testimonial-graphic .testimonial-meta {
+    margin-bottom: 1rem;
+}
+
+.testimonial-stars .testimonial-graphic .t-stars-box {
+    margin-bottom: 2.5rem;
+}
+
+.testimonial-stars .t-graphic-meta-text,
+.testimonial-stars .t-graphic-text {
+    display: block;
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-stars .t-graphic-meta-text {
+    background: #e1e8ee;
+}
+
+.testimonial-stars .t-graphic-meta-text:last-child {
+    width: 80%;
+}
+
+.testimonial-stars .t-graphic-text {
+    background: #f4f4f4;
+}
+
+.btn-cta {
+    background: white;
+    color: #f64747;
+    border-color: white;
+    box-shadow: 1px 3px 5px 0 rgba(120, 90, 50, 0.5);
+    padding: 12.5px;
+    min-width: 30rem;
+    font-size: 2.5rem;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+    background: #f64747;
+    color: white;
+    border-color: #f64747;
+}
+
+/* modal */
+
+#modal-container {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 1;
+}
+
+html.modal-active,
+body.modal-active {
+    overflow: hidden;
+}
+
+#modal-container.five {
+    transform: scale(1);
+}
+
+#modal-container.five .modal-background {
+    background: rgba(0, 0, 0, .0);
+    animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    opacity: 1;
+}
+
+#modal-container.five .modal-background .modal {
+    transform: translateX(-1500px);
+    animation: roadRunnerIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.five.out {
+    animation: quickScaleDown 0s 0.5s linear forwards;
+}
+
+#modal-container.five.out .modal-background {
+    animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.five.out .modal-background .modal {
+    animation: roadRunnerOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    vertical-align: middle;
+}
+
+#modal-container .modal-background .modal {
+    background: white;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 300;
+    position: relative;
+}
+
+#modal-container .modal-background .modal h2 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+#modal-container .modal-background .modal p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#modal-container .modal-background .modal .modal-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+
+#modal-container .modal-background .modal .modal-svg rect {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 778;
+    stroke-dashoffset: 778;
+}
+
+.content {
+    min-height: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    z-index: 0;
+}
+
+.content h1 {
+    padding: 75px 0 30px 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.content .buttons {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.content .buttons .button {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px;
+    background: red;
+    font-size: 18px;
+    background-color: #efefef;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.content .buttons .button:hover {
+    color: white;
+    background: #009bd5;
+}
+
+@keyframes unfoldIn {
+    0% {
+        transform: scaleY(0.005) scaleX(0);
+    }
+
+    50% {
+        transform: scaleY(0.005) scaleX(1);
+    }
+
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes unfoldOut {
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+
+    50% {
+        transform: scaleY(0.005) scaleX(1);
+    }
+
+    100% {
+        transform: scaleY(0.005) scaleX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        background: rgba(0, 0, 0, .0);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, .7);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        background: rgba(0, 0, 0, .7);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, .0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8) translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleDown {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.8) translateY(1000px);
+        opacity: 0;
+    }
+}
+
+@keyframes scaleBack {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.85);
+    }
+}
+
+@keyframes scaleForward {
+    0% {
+        transform: scale(0.85);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes quickScaleDown {
+    0% {
+        transform: scale(1);
+    }
+
+    99.9% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes slideUpLarge {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slideDownLarge {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(150px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(150px);
+    }
+}
+
+@keyframes blowUpContent {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    99.9% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes blowUpContentTwo {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes blowUpModal {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blowUpModalTwo {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes roadRunnerIn {
+    0% {
+        transform: translateX(-1500px) skewX(30deg) scaleX(1.3);
+    }
+
+    70% {
+        transform: translateX(30px) skewX(0deg) scaleX(0.9);
+    }
+
+    100% {
+        transform: translateX(0px) skewX(0deg) scaleX(1);
+    }
+}
+
+@keyframes roadRunnerOut {
+    0% {
+        transform: translateX(0px) skewX(0deg) scaleX(1);
+    }
+
+    30% {
+        transform: translateX(-30px) skewX(-5deg) scaleX(0.9);
+    }
+
+    100% {
+        transform: translateX(1500px) skewX(30deg) scaleX(1.3);
+    }
+}
+
+@keyframes sketchIn {
+    0% {
+        stroke-dashoffset: 778;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes sketchOut {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 778;
+    }
+}
+
+@keyframes modalFadeIn {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes modalFadeOut {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes modalContentFadeIn {
+    0% {
+        opacity: 0;
+        top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes modalContentFadeOut {
+    0% {
+        opacity: 1;
+        top: 0px;
+    }
+
+    100% {
+        opacity: 0;
+        top: -20px;
+    }
+}
+
+@keyframes slowFade {
+    0% {
+        opacity: 1;
+    }
+
+    99.9% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
