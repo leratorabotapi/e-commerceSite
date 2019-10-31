@@ -75,6 +75,88 @@
 
                 <div class="row py-5 p-4 bg-white rounded shadow-sm">
                     <div class="col-lg-6">
+                            <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Delivery Options
+                                </div>
+        
+                                <form class="p-4">
+                                    <div class="form-row">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault01">First name</label>
+                                            <input type="text" class="form-control mb-3" id="validationDefault01"
+                                                placeholder="First name" required>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault02">Last name</label>
+                                            <input type="text" class="form-control" id="validationDefault02"
+                                                placeholder="Last name" required>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationDefault">Adress</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="validationDefaultUsername"
+                                                    placeholder="Adress" aria-describedby="inputGroupPrepend2" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationDefault03">City</label>
+                                            <input type="text" class="form-control" id="validationDefault03" placeholder="City"
+                                                required>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="validationDefault04">Province</label>
+                                            <input type="text" class="form-control" id="validationDefault04"
+                                                placeholder="Province" required>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="validationDefault05">Zip</label>
+                                            <input type="text" class="form-control" id="validationDefault05" placeholder="Zip"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group bg-light p-1 rounded">
+        
+                                        <div class="form-check form-check-inline badge">
+        
+                                            <input class="form-check-input" type="radio" id="collection" name="delStatus"
+                                                checked="checked" value="collection">
+                                            <label class="form-check-label" for="inlineCheckbox1">Collection</label>
+                                        </div>
+        
+                                        <div class="form-check form-check-inline badge">
+        
+                                            <input class="form-check-input" type="radio" id="delivery" name="delStatus"
+                                                value="delivery">
+        
+                                            <label class="form-check-label " for="inlineCheckbox2">
+                                                Delivery</label>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="form-group mt-2 bg-warning p-1 rounded" id="deliveryOptions" style="display: none">
+                                        <div class="form-check form-check-inline badge">
+                                            <input class="form-check-input" type="radio" name="sameDay"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Same Day Delivery</label>
+
+                                            <a id="sudo" href="#" class="card-link add-to-cart" data-name="Same Day Deivery" data-price="600.00" style="display: none">Add to Cart</a>
+
+
+                                        </div>
+                                        <div class="form-check form-check-inline badge">
+                                            <input class="form-check-input" type="radio" name="deliverStandard"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Standard (48hrs) Delivery</label>
+
+                                            <a id="sudo2" href="#" class="card-link add-to-cart" data-name="Same Day Deivery" data-price="300.00" style="display: none">Add to Cart</a>
+
+                                        </div>
+                                    </div>
+        
+                                </form>
                         <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Discount code</div>
                         <div class="p-4">
                             <p class="font-italic mb-4">If you have a discount code, please enter it in the box below
@@ -109,87 +191,14 @@
                                     <div class="modal">
                                         <h2>Hi There</h2>
                                         <p>The coupn code is: DISCOUNT10</p>
+                                        <br>
+                                        <p>Add coupn code to recieve 10% off your total</p>
                                         <button type="" class="btn">CLICK HERE TO DISMISS</button>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Delivery Options
-                        </div>
-
-                        <form class="p-4">
-                            <div class="form-row">
-                                <div class="col-md-4 mb-3">
-                                    <label for="validationDefault01">First name</label>
-                                    <input type="text" class="form-control mb-3" id="validationDefault01"
-                                        placeholder="First name" required>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label for="validationDefault02">Last name</label>
-                                    <input type="text" class="form-control" id="validationDefault02"
-                                        placeholder="Last name" required>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label for="validationDefault">Adress</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="validationDefaultUsername"
-                                            placeholder="Adress" aria-describedby="inputGroupPrepend2" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationDefault03">City</label>
-                                    <input type="text" class="form-control" id="validationDefault03" placeholder="City"
-                                        required>
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationDefault04">Province</label>
-                                    <input type="text" class="form-control" id="validationDefault04"
-                                        placeholder="Province" required>
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationDefault05">Zip</label>
-                                    <input type="text" class="form-control" id="validationDefault05" placeholder="Zip"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-
-                                <div class="form-check form-check-inline badge">
-
-                                    <input class="form-check-input" type="radio" id="collection" name="delStatus"
-                                        checked="checked" value="collection">
-                                    <label class="form-check-label" for="inlineCheckbox1">Collection</label>
-                                </div>
-
-                                <div class="form-check form-check-inline badge">
-
-                                    <input class="form-check-input" type="radio" id="delivery" name="delStatus"
-                                        value="delivery">
-
-                                    <label class="form-check-label " for="inlineCheckbox2">
-                                        Delivery</label>
-
-                                </div>
-
-                            </div>
-
-                            <div class="form-group mt-2" id="deliveryOptions" style="display: none">
-                                <div class="form-check form-check-inline badge">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">Same Day Delivery</label>
-                                </div>
-                                <div class="form-check form-check-inline badge">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">Standard (48hrs) Delivery</label>
-                                </div>
-                            </div>
-
-                        </form>
 
                     </div>
                     <div class="col-lg-6">
@@ -204,7 +213,7 @@
                                 </li>
                                 <li id="" class="d-flex justify-content-between py-3 border-bottom"><strong
                                         class="text-muted">Delivery Charge</strong><strong>R<span
-                                            id="">0.00</span></strong>
+                                            id="chargeDelivery">0.00</span></strong>
                                 </li>
                                 <li class="d-flex justify-content-between py-3 border-bottom"><strong
                                         class="text-muted">VAT @ 15%</strong>
@@ -236,23 +245,6 @@
     <script src="js/shoppingCart.js"></script>
 
     <script>
-        // discount coupon validator
-
-        $(document).ready(function () {
-            $('.discount').click(function (e) {
-                var coupon = $(".couponcode").val();
-                var key = e.which;
-                if (key == "DISCOUNT10") {
-                    if (coupon == "DISCOUNT10") {
-                        alert("Yes");
-                    } else {
-                        alert("Sorry, try again");
-                    }
-                    return alert("WTF!");
-                }
-            });
-        });
-
         // Hide/Show Toggle 
 
         $(".toggle-btn").click(function () {
