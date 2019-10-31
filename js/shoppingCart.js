@@ -5,7 +5,8 @@ function orderRef() {
     let finalTotal = localStorage.getItem('total');
     alert("Thank you for shopping with us, " + "your Total is: " + "R" + finalTotal);
     alert("Your Reference code is: " + Math.random().toString(36).substr(2));
-    //localStorage.clear();
+    alert("Thank You for shpping with EZSRA")
+    localStorage.clear();
 };
 
 // Shopping Cart functions
@@ -190,6 +191,22 @@ let shoppingCart = (function () {
                     break;
             }
         });
+
+        //same day delivery
+      $('input[type=radio][name=sameDay]').on('click', function (){
+          console.log("Same-day delivery works")
+          document.getElementById('chargeDelivery').innerHTML = "600";
+          $("#sudo").click();
+      }) 
+
+      //48hr standard delivery
+      $('input[type=radio][name=deliverStandard]').on('click', function (){
+        console.log("Same-day delivery works")
+        document.getElementById('chargeDelivery').innerHTML = "300";
+        $("#sudo2").click();
+    })
+    saveCart();
+      
     };
 
     obj.coupon = function () { // coupon function
